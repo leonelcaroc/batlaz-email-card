@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batlaz Email</title>
+
+    <style>
+      @font-face {
+        font-family: "Regular"; /*Can be any text*/
+        src: local("AeonikTRIAL-Regular"),
+          url("./assets/fonts/AeonikTRIAL-Regular.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "Bold"; /*Can be any text*/
+        src: local("AeonikTRIAL-Bold"),
+          url("./assets/fonts/AeonikTRIAL-Bold.otf") format("opentype");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: ; */
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Regular" !important;
+        min-height: 100vh;
+        background-image: url("./assets/main-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      button {
+        background-color: #7e20c9;
+        color: #fff;
+        height: 2.5rem;
+        width: 9rem;
+        border-radius: 44px;
+        border: none;
+        cursor: pointer;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-family: inherit;
+      }
+
+      h3 {
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .download-image {
+        color: #7e20c9;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .main-container {
+        max-width: 420px;
+      }
+
+      section .first-section {
+        background-color: #62199d;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-image: url("./assets/secondary-background.png");
+        padding: 1.5rem;
+      }
+
+      section .second-section {
+        background-color: #ffffff;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        text-align: center;
+        padding: 1rem 3rem;
+      }
+
+      .email-container {
+        text-align: start;
+      }
+
+      .gray-color {
+        color: hsl(278, 5%, 45%);
+      }
+
+      .greetings {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .email-body {
+        line-height: 1.55;
+      }
+
+      .note {
+        margin-bottom: 1rem;
+        font-size: 14.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <section class="first-section">
+        <img src="./assets/email_logo.png" alt="" />
+      </section>
+      <section class="second-section">
+        <h3>Verification Request</h3>
+        <section>
+          <section class="email-container">
+            <p>Hi<span class="greetings"> UserName,</span></p>
+            <br />
+            <section class="email-body">
+              <p>You have received a Request!</p>
+              <p>Username: iamYou</p>
+              <p>Transaction ID: 0123456</p>
+              <p>Amount: $100.00</p>
+              <p>Date: Feb 25, 2023; 5:30pm</p>
+            </section>
+          </section>
+          <button>View Detail</button>
+          <p class="gray-color note">
+            If you received this in error, simply ignore this email and do not
+            click the button
+          </p>
+          <p class="gray-color">Batlaz.</p>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
